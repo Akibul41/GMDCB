@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: rgb(246, 217, 89);
+  overflow: hidden;
+  height: 36px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: rgb(44, 10, 10);
+  text-align: center;
+  padding: 0% 30px;
+  text-decoration: none;
+  line-height: 00px;
+
+}
+
+.navbar a:hover {
+  background-color: rgb(221, 221, 221);
+  color: rgb(240, 197, 4);
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.headline {
+  text-align: center;
+  font-size: 36px;
+  /* Large font size */
+  font-weight: bold;
+  color: #4caf50;
+  /* Attractive color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Shadow effect */
+  border: 2px solid #4caf50;
+  /* Border */
+  padding: 20px;
+  /* Add some padding for better appearance */
+  margin-bottom: 20px;
+  /* Add some margin to separate from container */
+
+}
+
+.marquee {
+  border: 1px solid black;
+  /* Add a border */
+  padding: 0px;
+  /* Add padding for better visibility */
+  height: 24px;
+  line-height: 24px;
+  background-color: chocolate;
+}
+
+.marquee h5 {
+  height: 34px;
+  /* Match the height of .marquee */
+
+}
+
+.container {
+  text-align: center;
+}
+
+#image-container {
+  width: 700px;
+  /* Increased width for the container */
+  height: 350px;
+  /* Increased height for the container */
+  overflow: hidden;
+  /* Ensure that images larger than container size are cropped */
+  display: inline-block;
+  /* Use flexbox to center align children */
+  justify-content: center;
+  /* Horizontally center align child elements */
+  align-items: center;
+  /* Vertically center align child elements */
+  border: 2px solid #ccc;
+  /* Border for the container */
+  background-color: #f0f0f0;
+  /* Background color for the container */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  /* Box shadow for the container */
+}
+
+.box {
+  display: inline-block;
+  border: 2px solid red;
+  width: 150px;
+  height: 350px;
+  margin: 2px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  /* Ensure images do not exceed container width */
+  max-height: 100%;
+  /* Ensure images do not exceed container height */
+  transition: opacity 0.5s ease-in-out;
+}

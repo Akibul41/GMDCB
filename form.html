@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Information Form</title>
+  <style>
+    /* Your CSS styles go here */
+  </style>
+</head>
+<body>
+  <h2>Student Information Form</h2>
+  <form id="student-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="roll-number">Roll Number:</label>
+    <input type="text" id="roll-number" name="roll-number" required><br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    document.getElementById("student-form").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+      // Retrieve form data
+      var name = document.getElementById("name").value;
+      var rollNumber = document.getElementById("roll-number").value;
+      // Display the collected data
+      alert("Name: " + name + "\nRoll Number: " + rollNumber);
+      // You can perform further actions here, such as sending the data to a server via AJAX
+    });
+  </script>
+</body>
+</html>
