@@ -1,33 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Information Form</title>
-  <style>
-    /* Your CSS styles go here */
-  </style>
-</head>
-<body>
-  <h2>Student Information Form</h2>
-  <form id="student-form">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required><br><br>
-    <label for="roll-number">Roll Number:</label>
-    <input type="text" id="roll-number" name="roll-number" required><br><br>
-    <button type="submit">Submit</button>
-  </form>
+  <title>Govt. Model Degree College</title>
+  <link rel="stylesheet" href="styles.css">
 
-  <script>
-    document.getElementById("student-form").addEventListener("submit", function(event) {
-      event.preventDefault(); // Prevent form submission
-      // Retrieve form data
-      var name = document.getElementById("name").value;
-      var rollNumber = document.getElementById("roll-number").value;
-      // Display the collected data
-      alert("Name: " + name + "\nRoll Number: " + rollNumber);
-      // You can perform further actions here, such as sending the data to a server via AJAX
-    });
-  </script>
+</head>
+
+<body>
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+  <div class="headline">
+    GOVT. MODEL DEGREE COLLEGE, BAGHBAR
+  </div>
+  <div class="navbar">
+    <a href="index.html">
+      <h3>Home</h3>
+    </a>
+    <a href="#about">
+      <h3>About</h3>
+    </a>
+    <a href="form.html">
+      <h3>Admission Form</h3>
+    </a>
+    <a href="#notification">
+      <h3>Notification</h3>
+    </a>
+    <a href="#gallery">
+      <h3>Gallery</h3>
+    </a>
+    <a href="#staff">
+      <h3>Staff</h3>
+    </a>
+    <a href="#contact">
+      <h3>Contact Us</h3>
+    </a>
+  </div>
+
+
+
+  <div class="marquee">
+    <marquee direction="left" scrollamount="20" onmouseover="stop">
+      <b>Admission will be started soon</b>
+    </marquee>
+  </div>
+
+  <div class="container">
+    <div id="image-container">
+      <img id="image" src="image1.jpg" alt="Image">
+
+      <!-- <p id="notice-container">Akibul Hassan <br>Mandia</p> -->
+    </div>
+    <div id="notice-container">
+      <p>News & Notice <br></p>
+      <div class="news-bulletin">
+        <marquee direction="up" scrollamount="10">
+          <span><p> News 1 </p> <br></span>
+          <span><p> News 2 </p> <br></span>
+          <span><p> News 3 </p> <br></span>
+          <!-- Add more news items as needed -->
+        </marquee>
+      </div>
+      
+      <a href="#notice" style="text-decoration: none;">view all</a>
+
+    </div>
+  </div>
+
+  </div>
+
+  <div id="about">
+    <p style="background-color: aqua;
+    width: 100px;
+    border: 2px solid rgb(34, 7, 110);
+    border-radius: 20px;">
+      NEP 2020</p>
+    <p style="background-color: aquamarine;
+    border: 2px solid blue; width: 75%;">
+      The National Education Policy 2020 (NEP 2020) heralds a transformative era in India's educational landscape.
+      Envisioned to revamp the outdated system, NEP 2020 emphasizes holistic development, flexibility, and innovation.
+      With a focus on early childhood education, vocational training, and multidisciplinary learning, it aims to nurture
+      well-rounded individuals equipped for the challenges of tomorrow. Embracing technology, language diversity, and
+      experiential learning, NEP 2020 fosters inclusivity and equitable access to quality education across
+      socio-economic strata. By encouraging critical thinking and creativity, it aspires to catalyze India's journey
+      towards becoming a global knowledge hub, empowering its youth to lead with confidence and competence in the 21st
+      century.
+    </p>
+  </div>
+
+  <div class="contact-info" id="contact">
+    <p>Contact Us</p>
+    <p>Dr. Seikh Faruk Ahmed</p>
+    <p>Principal, in-charge</p>
+    <p>Email: gmdcbaghbar@gmail.com</p>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
