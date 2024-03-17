@@ -66,11 +66,13 @@ body {
 }
 
 .container {
-  text-align: center;
+ 
+
 }
 
 #image-container {
-  width: 700px;
+  text-align: center;
+  width: 1200px;
   /* Increased width for the container */
   height: 350px;
   /* Increased height for the container */
@@ -89,20 +91,85 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   /* Box shadow for the container */
 }
+#notice-container{
+  float: right;
+  text-align: center;
+  padding: 0% 0px;
+  text-decoration: none;
+  border: 2px solid black; 
+  height: 500px;
+  width: 270px;
+  background-color: #4caf50;
+
+
+  text-decoration: none;
+  line-height: 00px;
+  
+}
+
+.news-bulletin {
+  height: 88%; /* Adjust height of the bulletin box */
+  overflow: hidden; /* Hide overflow */
+  border: 1px solid black; 
+  padding: 1%;
+  background-color: azure;
+
+}
+
+.news-bulletin marquee {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  padding: 5px; /* Add padding */
+}
+
+
+
 
 .box {
   display: inline-block;
-  border: 2px solid red;
+  border: 2px solid rgb(8, 117, 4);
   width: 150px;
   height: 350px;
   margin: 2px;
   text-align: center;
-}
 
+}
+ 
 img {
   max-width: 100%;
   /* Ensure images do not exceed container width */
   max-height: 100%;
   /* Ensure images do not exceed container height */
   transition: opacity 0.5s ease-in-out;
+}
+.contact-info {
+  position: relative;
+  float: right;
+  margin: 10px;
+  font-size: 14px;
+  line-height: 1.2; /* Adjust line spacing as needed */
+  text-align: right;
+  color: rgb(14, 51, 7); /* Text color */
+  background-color: rgb(245, 180, 180); /* Background color */
+  padding: 15px; /* Add some padding for better appearance */
+  border-radius: 5px; /* Add rounded corners */
+  font-style: italic; /* Set font style */
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); /* Add text shadow */
+}
+
+.navbar1 {
+  background-color: rgb(246, 217, 89);
+  overflow: hidden;
+  height: 36px;
+}
+
+.navbar1 a {
+  float: left;
+  display: block;
+  color: rgb(44, 10, 10);
+  text-align: center;
+  padding: 0% 30px;
+  text-decoration: none;
+  line-height: 00px;
+
 }
